@@ -25,7 +25,7 @@ const Monedas = ({
           ) : (
             <p className="mon-percent green">{price_change.toFixed(2)}%</p>
           )}
-          <p className="mkt_cap">Market Cap:₹{mkt_cap.toLocaleString()}</p>
+          <p className="mkt_cap">Mkt Cap:₹{mkt_cap.toLocaleString()}</p>
         </div>
       </div>
     </div>
