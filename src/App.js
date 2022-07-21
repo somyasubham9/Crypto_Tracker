@@ -25,7 +25,7 @@ const filteredMonedas=monedas.filter((mon)=>mon.name.toLowerCase().includes(sear
     <div className="main">
       <div className="search">
       <h1 className="search-text">Search Currency</h1>
-        <form>
+        <form onSubmit="return false;">
           <input type='text' className="input" placeholder="Search" onChange={changeHandler}></input>
         </form>
       </div>
