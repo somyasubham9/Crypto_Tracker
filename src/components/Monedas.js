@@ -18,14 +18,14 @@ const Monedas = ({
           <p className="symbol">{symbol}</p>
         </div>
         <div className="data">
-          <p className="price">${price.toLocaleString()}</p>
-          <p className="volume">${volume.toLocaleString()}</p>
+          <p className="price">₹{price.toLocaleString()}</p>
+          <p className="volume">₹{volume.toLocaleString()}</p>
           {price_change < 0 ? (
             <p className="mon-percent red">{price_change.toFixed(2)}%</p>
           ) : (
             <p className="mon-percent green">{price_change.toFixed(2)}%</p>
           )}
-          <p className="mkt_cap">Market Cap:${mkt_cap.toLocaleString()}</p>
+          <p className="mkt_cap">Market Cap:₹{mkt_cap.toLocaleString()}</p>
         </div>
       </div>
     </div>
