@@ -20,7 +20,8 @@ const App = () => {
 const changeHandler=(e)=>{
 setSearch(e.target.value);
 }
-const filteredMonedas=monedas.filter((mon)=>mon.name.toLowerCase().includes(search.toLowerCase()));
+const filteredMonedas=monedas.filter((mon)=> mon.name.toLowerCase().includes(search.toLowerCase()) ||
+mon.symbol.toLowerCase().includes(search.toLowerCase()));
   return (
     <div className="main">
       <div className="search">
